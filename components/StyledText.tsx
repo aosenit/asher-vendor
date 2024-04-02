@@ -1,5 +1,12 @@
-import { Text, TextProps } from './Themed';
+import { Text, TextProps } from "react-native";
 
-export function MonoText(props: TextProps) {
-  return <Text {...props} style={[props.style, { fontFamily: 'SpaceMono' }]} />;
+export function ExoLight(props: TextProps) {
+  return <Text {...props} style={[props.style, { fontFamily: "exoLight" }]} />;
+}
+export function ExoMedium(props: TextProps) {
+  return <Text {...props} style={[props.style, { fontFamily: "exoMedium" }]} />;
+}
+
+export function ExoBold(props: TextProps) {
+  return <Text {...props} style={[props.style, { fontFamily: "exoBold" }]} />;
 }
